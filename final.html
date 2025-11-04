@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Finalizar Compra — Skin Luxe</title>
+  <link rel="stylesheet" href="final.css" />
+</head>
+
+<body>
+  <header>
+    <img src="img/logo.png" alt="Skin Luxe" class="logo" />
+    <div style="margin-left:auto;padding-right:1rem;">
+      <a href="index.html" style="text-decoration:none;color:#a0713f;font-weight:700;">Voltar à loja</a>
+    </div>
+  </header>
+
+  <main class="checkout" aria-labelledby="titulo-checkout">
+    <section class="card" id="pedido">
+      <h2 id="titulo-checkout">Resumo do pedido</h2>
+      <div id="lista-pedido" class="pedido-list" aria-live="polite"></div>
+
+      <div class="resumo" style="margin-top:1rem;">
+        <div class="linha"><span>Subtotal</span><span id="subtotal">R$ 0,00</span></div>
+        <div class="linha"><span>Frete</span><span id="frete">R$ 0,00</span></div>
+        <div class="linha" style="font-size:1.15rem;"><span>Total</span><span id="total-geral">R$ 0,00</span></div>
+      </div>
+
+      <button id="limpar" class="btn-primary" style="background:#fff;color:#a0713f;border:2px solid #a0713f;margin-top:1rem;">Limpar carrinho</button>
+      <p style="margin-top:.8rem;color:#4d3b2f;font-size:.95rem;">Os valores são exemplos. Esta página simula o processo de finalização.</p>
+      <div id="confirmacao" aria-live="polite"></div>
+    </section>
+
+    <aside class="card">
+      <h3>Informações de entrega</h3>
+      <form id="form-checkout" novalidate>
+        <div class="form-row">
+          <div class="campo">
+            <label>Nome completo</label>
+            <input type="text" id="nome" required />
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="campo">
+            <label>Telefone</label>
+            <input type="tel" id="telefone" placeholder="(00) 90000-0000" required />
+          </div>
+          <div class="campo">
+            <label>CPF (opcional)</label>
+            <input type="text" id="cpf" />
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="campo">
+            <label>Endereço</label>
+            <input type="text" id="endereco" placeholder="Rua, número, complemento" required />
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="campo">
+            <label>Cidade</label>
+            <input type="text" id="cidade" required />
+          </div>
+          <div class="campo">
+            <label>CEP</label>
+            <input type="text" id="cep" required />
+          </div>
+        </div>
+
+        <div style="margin-top:.8rem;">
+          <label>Método de entrega</label>
+          <select id="metodo-frete">
+            <option value="sedex">Sedex — R$ 20,00</option>
+            <option value="economico">Econômico — R$ 12,00</option>
+            <option value="retirada">Retirada — R$ 0,00</option>
+          </select>
+        </div>
+
+        <div style="margin-top:1rem;">
+          <label>Pagamento</label>
+          <div class="pagamentos">
+            <label><input type="radio" name="pay" value="cartao" checked /> Cartão de crédito</label>
+            <label><input type="radio" name="pay" value="pix" /> PIX</label>
+            <label><input type="radio" name="pay" value="boleto" /> Boleto</label>
+          </div>
+        </div>
+
+        <div style="margin-top:1rem;">
+          <label>Observações (opcional)</label>
+          <textarea id="obs" rows="3" placeholder="Instruções de entrega..."></textarea>
+        </div>
+
+        <button type="submit" id="finalizar" class="btn-primary" style="width:100%;margin-top:1rem;">Finalizar compra</button>
+      </form>
+    </aside>
+  </main>
+
+  <footer style="text-align:center;padding:1.2rem;color:#a0713f;">© 2025 Skin Luxe</footer>
+
+  <script src="final.js"></script>
+</body>
+
+</html>

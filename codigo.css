@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("maquiagem\ fundo.jpg.jpeg") no-repeat;
+}
+
+.container {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 40px 50px;
+  border-radius: 20px;
+  text-align: center;
+  color: white;
+  max-width: 400px;
+  width: 100%;
+}
+
+.container h2 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.container p {
+  display: block;
+  font-size: 14px;
+  color: #e7b81f;
+  margin-bottom: 20px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.container a {
+  display: block;
+  font-size: 14px;
+  color: #ffffff;
+  margin-bottom: 0px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.inputs {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.inputs input {
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 8px;
+  font-size: 22px;
+  text-align: center;
+  background: #f1f1f1;
+  color: #333;
+  outline: none;
+  transition: 0.3s;
+}
+button {
+  background-color: #7b6806;
+  color: white;
+  border: none;
+  padding: 10px;
+  width: 60%;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #ab910e;
+}

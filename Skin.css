@@ -1,0 +1,93 @@
+.container {
+  position: relative;
+  display: inline-block;
+}
+.container .img {
+  display: block;
+  max-width: 100%;
+}
+.container .palavra {
+  position: absolute;
+  top: 10%;
+  left: 9%;
+  transform: translate(-50%, -50%);
+  color: rgba(239, 199, 22, 0.693);
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.container .letra {
+  position: absolute;
+  top: 15%;
+  left: 10%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.container .texto {
+  position: absolute;
+  top: 25%;
+  left: 15%;
+  transform: translate(-50%, -50%);
+  color: aliceblue;
+  font-size: 30px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.entrar {
+  background-color: #85720f;
+  color: rgb(255, 250, 250);
+  padding: 5px 10px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  text-align: center;
+  font-style: none;
+}
+.entrar > a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+.clicar > a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+.entrar:hover {
+  background-color: #ab910e;
+}
+.clicar {
+  background-color: #85720f;
+  color: rgb(253, 250, 250);
+  padding: 5px 10px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  text-align: center;
+}
+.clicar:hover {
+  background-color: #ab910e;
+}
+.container .entrar {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translate(-50%, -50%);
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+}
+.container .clicar {
+  position: absolute;
+  top: 60%;
+  left: 10%;
+  transform: translate(-50%, -50%);
+  color: rgb(255, 255, 255);
+  font-size: 25px;
+}
+
+.container .divisão {
+  position: absolute;
+  top: 51%;
+  left: 10%;
+  transform: translate(-50%, -50%);
+  color: rgb(204, 201, 194);
+  font-size: 25px;
+}

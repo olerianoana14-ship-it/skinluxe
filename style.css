@@ -1,0 +1,390 @@
+body {
+  background: #f8f5f2;
+  color: #4d3b2f;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem 2rem;
+  background: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 20;
+}
+.logo {
+  height: 44px;
+}
+.nav-links {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.nav-links a {
+  text-decoration: none;
+  color: #3b2c20;
+  font-weight: 500;
+  margin: 0 8px;
+}
+.search-cart {
+  display: flex;
+  gap: 0.8rem;
+  align-items: center;
+}
+.search-cart input {
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  border: 1px solid #e6ded6;
+  outline: none;
+  width: 220px;
+}
+#abrir-carrinho {
+  background: #a0713f;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  padding: 0.6rem 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(160, 113, 63, 0.08);
+}
+#abrir-carrinho:hover {
+  background: #7a5328;
+  transform: translateY(-1px);
+}
+#cart-count {
+  color: #fff;
+  font-weight: 700;
+}
+
+/* Sidebar carrinho */
+.sidebar-carrinho {
+  position: fixed;
+  top: 0;
+  right: -380px;
+  width: 360px;
+  height: 100%;
+  background: #fff;
+  box-shadow: -4px 0 24px rgba(0, 0, 0, 0.12);
+  padding: 20px;
+  transition: right 0.28s ease;
+  z-index: 100;
+}
+.sidebar-carrinho.aberta {
+  right: 0;
+}
+#fechar-carrinho {
+  float: right;
+  background: #fff;
+  color: #a0713f;
+  border: 2px solid #a0713f;
+  border-radius: 16px;
+  padding: 6px 10px;
+  cursor: pointer;
+}
+#fechar-carrinho:hover {
+  background: #a0713f;
+  color: #fff;
+}
+
+/* Banner */
+.banner-colecao {
+  position: relative;
+  max-width: 1200px;
+  margin: 1.5rem auto;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 6px 24px rgba(160, 113, 63, 0.08);
+}
+.banner-colecao img {
+  width: 100%;
+  height: 340px;
+  object-fit: cover;
+  display: block;
+  filter: brightness(0.85);
+}
+.banner-texto {
+  position: absolute;
+  left: 6%;
+  top: 24%;
+  color: #fff;
+  max-width: 520px;
+  text-shadow: 0 6px 24px rgba(0, 0, 0, 0.25);
+}
+.banner-texto h1 {
+  font-size: 2.4rem;
+  margin: 0 0 0.5rem 0;
+  letter-spacing: 1px;
+}
+.banner-texto p {
+  margin: 0 0 1rem 0;
+  font-size: 1.05rem;
+}
+.btn-banner {
+  background: #a0713f;
+  color: #fff;
+  padding: 0.6rem 1.4rem;
+  border-radius: 24px;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+/* Cards de proeficiencias */
+.cards-proeficiencias {
+  display: flex;
+  gap: 1.2rem;
+  justify-content: center;
+  margin: 1.2rem auto;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  padding: 0 1rem;
+}
+.card-proeficiencia {
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.05);
+  padding: 1.4rem;
+  text-align: center;
+  width: 260px;
+}
+.card-proeficiencia img {
+  width: 56px;
+  height: 56px;
+  margin-bottom: 0.8rem;
+}
+
+/* Filtros */
+.filtros {
+  display: flex;
+  gap: 0.6rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 1rem;
+}
+.filtro {
+  background: #fff;
+  color: #a0713f;
+  border: 2px solid #a0713f;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.filtro.ativo,
+.filtro:hover {
+  background: #a0713f;
+  color: #fff;
+}
+
+/* Produtos */
+.produtos-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1.2rem;
+  max-width: 1200px;
+  margin: 1rem auto;
+  padding: 0 1rem;
+}
+.produto {
+  background: #fff;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.04);
+}
+.produto img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+.produto .info {
+  padding: 1rem;
+}
+.produto .info h3 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1rem;
+  color: #3b2c20;
+}
+.produto .info p {
+  color: #a0713f;
+  font-weight: 700;
+  margin: 0 0 0.6rem 0;
+}
+.produto button {
+  width: 100%;
+  background: #a0713f;
+  color: #fff;
+  border: none;
+  padding: 0.6rem;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.produto button:hover {
+  background: #7a5328;
+}
+
+/* Carrinho list */
+#lista-carrinho {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 0 0;
+  overflow-y: auto;
+  max-height: 60vh;
+}
+#lista-carrinho li {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 1rem;
+}
+#lista-carrinho img {
+  width: 56px;
+  height: 56px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+#lista-carrinho button {
+  margin-left: auto;
+  background: #a0713f;
+  color: #fff;
+  border: none;
+  padding: 0.45rem 0.7rem;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* Quem somos */
+.quem-somos {
+  max-width: 1100px;
+  margin: 2.5rem auto;
+  background: #fff;
+  border-radius: 14px;
+  padding: 2rem 1rem;
+  box-shadow: 0 6px 24px rgba(160, 113, 63, 0.06);
+  text-align: center;
+}
+.quem-somos h2 {
+  color: #a0713f;
+  margin-top: 0;
+}
+.descricao-quem-somos {
+  color: #4d3b2f;
+  margin-bottom: 1.5rem;
+}
+.cards-equipe {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.foto-equipe {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin: 0 auto 0.8rem;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+}
+
+/* Footer */
+footer {
+  background: #ede0d2;
+  text-align: center;
+  padding: 1.2rem;
+  color: #a0713f;
+  z-index: 10;
+}
+.finalizar {
+  margin-left: 190px;
+    background: #a0713f;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    padding: 0.8rem 1.4rem;
+    font-weight: 700;
+    cursor: pointer;
+    text-decoration: none;
+    box-shadow: 0 2px 8px rgba(160, 113, 63, 0.08);
+  }
+  .finalizar:hover {
+    background: #7a5328;
+    transform: translateY(-1px);
+  }
+ #grupo {
+    border-radius: 12px;
+    width: 180px;
+    height: 120px;
+  }
+/* Responsividade */
+@media (max-width: 900px) {
+  .banner-colecao img {
+    height: 220px;
+  }
+  .cards-proeficiencias {
+    gap: 0.8rem;
+  }
+
+  .produtos-container {
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  }
+  .sidebar-carrinho {
+    width: 100vw;
+    right: -100vw;
+  }
+  .sidebar-carrinho.aberta {
+    right: 0;
+  }
+}
+@media (max-width: 700px) {
+  header {
+    flex-direction: column;
+    gap: 0.6rem;
+    align-items: stretch;
+    padding: 0.8rem;
+  }
+
+  .cards-equipe {
+    flex-direction: column;
+    align-items: center;
+  }
+  .banner-texto h1 {
+    font-size: 1.3rem;
+  }
+}
+.nossa-colecao {
+  text-align: center;
+  color: #a0713f;
+  margin-top: 2rem;
+}
+.card-equipe {
+  background: #f8f5f2;
+  border-radius: 18px;
+  box-shadow: 0 2px 8px rgba(160, 113, 63, 0.05);
+  padding: 2.5rem 2rem;
+  max-width: 200px;
+  text-align: center;
+  transition: transform 0.2s;
+}
+.card-equipe:hover {
+  transform: translateY(-8px) scale(1.03);
+}
+.foto-equipe {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: #e2d2c0;
+  background-size: cover;
+  background-position: center;
+  margin: 0 auto 1rem auto;
+  box-shadow: 0 2px 8px rgba(160, 113, 63, 0.1);
+}
+#total-carrinho {
+  font-weight: 700;
+  margin-top: 1rem;
+}

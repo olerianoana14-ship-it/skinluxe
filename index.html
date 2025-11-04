@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Skin Luxe | Beleza que Transforma</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header>
+    <img src="img/logo.png" alt="logo Skin Luxe" class="logo" />
+    <nav class="nav-links">
+      <a href="#produtos">Produtos</a>
+      <a href="#sobre">Quem Somos</a>
+    </nav>
+    <div class="search-cart">
+      <input type="text" id="search" placeholder="Buscar produtos..." />
+      <button id="abrir-carrinho"> Carrinho <span id="cart-count">0</span></button>
+    </div>
+  </header>
+
+  <div id="sidebar-carrinho" class="sidebar-carrinho" aria-hidden="true">
+    <button id="fechar-carrinho">Fechar</button>
+    <h2>Carrinho</h2>
+    <ul id="lista-carrinho"></ul>
+    <p id="total-carrinho"></p>
+     <a href="final.html" class="finalizar"> finalizar compra </a>
+  </div>
+
+  <main id="produtos">
+    <section class="colecao">
+      <div class="banner-colecao">
+        <img src="img/banner.png" alt="Banner Skin Luxe" />
+        <div class="banner-texto">
+          <h1>Beleza que Transforma</h1>
+          <p>Produtos premium, curadoria especializada e entrega rápida — para você e seu negócio.</p>
+          <a href="#lista-produtos" class="btn-banner">Ver Produtos</a>
+        </div>
+      </div>
+
+      <div class="cards-proeficiencias">
+        <div class="card-proeficiencia">
+          <h3>Qualidade Garantida</h3>
+          <p>Somente marcas confiáveis e lotes autenticados para sua segurança.</p>
+        </div>
+        <div class="card-proeficiencia">
+          <h3>Atendimento Personalizado</h3>
+          <p>Consultoria para escolher produtos que vendem e encantam clientes.</p>
+        </div>
+        <div class="card-proeficiencia">
+          <h3>Entrega Rápida</h3>
+          <p>Logística otimizada para que você receba tudo com rapidez e segurança.</p>
+        </div>
+      </div>
+
+      <h2 class="nossa-colecao">Nossa Coleção</h2>
+    </section>
+
+    <div class="filtros">
+      <button class="filtro ativo" data-cat="all">Todos</button>
+      <button class="filtro" data-cat="lábios">Lábios</button>
+      <button class="filtro" data-cat="olhos">Olhos</button>
+      <button class="filtro" data-cat="rosto">Rosto</button>
+      <button class="filtro" data-cat="acessórios">Acessórios</button>
+      <button class="filtro" data-cat="paletas">Paletas</button>
+      <button class="filtro" data-cat="bases">Bases</button>
+    </div>
+
+    <div class="produtos-container" id="lista-produtos"></div>
+  </main>
+
+  <section class="quem-somos" id="sobre">
+    <h2>Quem Somos</h2>
+    <p class="descricao-quem-somos">
+      Somos uma equipe dedicada a trazer qualidade, suporte e variedade para revendedores e amantes de maquiagem.
+    </p>
+    <div class="cards-equipe">
+      <div class="card-equipe">
+        <div class="foto-equipe" style="background-image:url('img/malu.png')"></div>
+        <h3>Maria Luisa Seron</h3>
+        <p>Fundadora — paixão por tendências e curadoria de produtos premium.</p>
+      </div>
+      <div class="card-equipe">
+        <div class="foto-equipe" style="background-image:url('img/batista.png')"></div>
+        <h3>Ana Julia Batista</h3>
+        <p>Atendimento — orienta e auxilia revendedores com soluções práticas.</p>
+      </div>
+      <div class="card-equipe">
+        <div class="foto-equipe" style="background-image:url('img/pietra.png')"></div>
+        <h3>Pietra Cuenca</h3>
+        <p>Financeiro — responsável por cuidar da gestão monetária.</p>
+      </div>
+      <div class="card-equipe">
+        <div class="foto-equipe" style="background-image:url('img/junior.png')"></div>
+        <h3>João Luis Rocha</h3>
+        <p>Curadoria — escolhemos sempre os melhores produtos do mercado.</p>
+      </div>
+      <div class="card-equipe">
+        <div class="foto-equipe " id="grupo" style="background-image:url('img/grupo.png')"></div>
+        <h3>Valores Da Marca</h3>
+        <p>Ética, transparência e compromisso com sua satisfação.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>© 2025 Skin Luxe — Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
